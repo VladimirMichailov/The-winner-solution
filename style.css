@@ -1,0 +1,153 @@
+:root {
+  --bkgcolor: #354b62;
+  --white: #ffffff;
+  --red: #c04848;
+}
+.header {
+  width: 50%;
+}
+
+header {
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  position: relative;
+  place-items: center;
+  color: white;
+  overflow: hidden;
+  background: #c04848;
+  background: linear-gradient(rgb(72, 0, 72, 0.8), rgb(192, 72, 72, 0.8)),
+    url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button1 {
+  background-color: var(--bkgcolor);
+  width: 200px;
+  height: 3rem;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.h1 {
+  position: absolute;
+  top: 6px;
+  left: 25%;
+  font-size: 1.5rem;
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--bkgcolor);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.nav a {
+  color: var(--red);
+  font-size: 0.8rem;
+}
+
+.nav img {
+  margin-bottom: 10px;
+}
+
+.nav p {
+  margin: 0;
+}
+
+.main img {
+  width: 100%;
+}
+
+.button2 {
+  background-color: var(--red);
+  width: 150px;
+  height: 3rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.main {
+  display: flex;
+
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.main article {
+  width: 70%;
+}
+
+.sector2 {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  display: grid;
+  position: relative;
+  place-items: center;
+  overflow: hidden;
+
+  background: linear-gradient(
+      rgba(247, 247, 247, 0.8),
+      rgba(247, 250, 251, 0.8)
+    ),
+    url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bkgcolor);
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sector2 {
+    background-image: none;
+  }
+
+  .main {
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+
+  footer {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .footer p {
+    width: 70%;
+  }
+}
+.algfooter {
+  background-color: var(--bkgcolor);
+  display: flex;
+  justify-content: center;
+}
